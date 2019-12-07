@@ -5,14 +5,14 @@ import React from "react";
 
 import Item from "./Todo";
 
-const TodoListSet = props => {
+const TodoList = props => {
   return (
-    <div>
-      {props.todo.map((item) => {
+    <div className="list">
+      {props.todo.map(item => {
         return <Item item={item} key={item.id} toggleItem={props.toggleItem} />;
       })}
     </div>
   );
 };
 
-export default TodoListSet;
+export default TodoList;

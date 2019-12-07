@@ -1,0 +1,45 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+    padding: 0 36px;
+    max-width: 665px;
+    margin: 0 auto;
+  }
+
+.list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .item {
+      width: 45%;
+      padding: 10px;
+      margin-bottom: 15px;
+      background-color: dodgerblue;
+      text-align: center;
+      font-weight: bold;
+      color: white;
+      box-shadow: 10px 10px 5px #aaaaaa;
+      font-size: 1.4rem;
+      text-shadow:
+      -1px -1px 0 #000,  
+       1px -1px 0 #000,
+       -1px 1px 0 #000,
+        1px 1px 0 #000;
+  }
+
+  .item.done {
+    text-decoration: line-through;
+    font-weight: unset;
+    border-radius: 10px 100px / 120px;
+    color: darkgray;
+    text-shadow: none;
+  }
+
+  .input {
+      margin-bottom: 12px;
+      color: black;
+  }
